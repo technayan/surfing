@@ -1,0 +1,1169 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400&display=swap");
+@font-face {
+  font-family: "League Spartan";
+  src: url(../font/LeagueSpartan-Bold.ttf);
+}
+
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 65.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #616161;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  overflow-x: hidden !important;
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+a {
+  -webkit-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+section, .quote-section, .story-section {
+  padding: 7rem 0;
+}
+
+@media (max-width: 991.98px) {
+  section, .quote-section, .story-section {
+    padding: 5rem 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  section, .quote-section, .story-section {
+    padding: 4rem 0;
+  }
+}
+
+.section-sub-title, .hero-section .hero-text h3, .shop-section h3 {
+  font-family: "League Spartan";
+  font-size: 1.6rem;
+  letter-spacing: 0.8rem;
+  color: #5da8ef;
+}
+
+.section-title, .camp-section .camp-loc {
+  font-family: "Playfair Display", serif;
+  font-size: 4.2rem;
+  line-height: 66px;
+  color: #333333;
+  font-weight: 700;
+}
+
+@media (max-width: 991.98px) {
+  .section-title, .camp-section .camp-loc {
+    font-size: 3.8rem;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-title, .camp-section .camp-loc {
+    font-size: 3.2rem;
+    line-height: 30px;
+  }
+}
+
+.primary-btn, .shop-section .item .board-info .shop-btn, .training-section .training-btn, .point-break-section .point-break-btn, .camp-section .camp-btn {
+  font-family: "League Spartan";
+  font-size: 1.4rem;
+  letter-spacing: 0.5rem;
+  background: none;
+  border: none;
+  position: relative;
+}
+
+.primary-btn:hover, .shop-section .item .board-info .shop-btn:hover, .training-section .training-btn:hover, .point-break-section .point-break-btn:hover, .camp-section .camp-btn:hover {
+  color: #5da8ef;
+}
+
+.primary-btn:hover::after, .shop-section .item .board-info .shop-btn:hover::after, .training-section .training-btn:hover::after, .point-break-section .point-break-btn:hover::after, .camp-section .camp-btn:hover::after {
+  width: 50%;
+}
+
+.primary-btn::after, .shop-section .item .board-info .shop-btn::after, .training-section .training-btn::after, .point-break-section .point-break-btn::after, .camp-section .camp-btn::after {
+  content: "";
+  width: 100%;
+  height: 0.2rem;
+  background: #8cc1f3;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.section-title-underline {
+  position: relative;
+}
+
+.section-title-underline::after {
+  position: absolute;
+  content: '';
+  width: 2.3rem;
+  height: 0.2rem;
+  background: #5da8ef;
+  bottom: -0.5rem;
+  left: 0;
+}
+
+@media (max-width: 991.98px) {
+  .section-title-underline::after {
+    bottom: -1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-title-underline::after {
+    bottom: -1.5rem;
+  }
+}
+
+.section-title-underline .section-number {
+  position: absolute;
+  font-family: "League Spartan";
+  letter-spacing: 1rem;
+  color: #f3f3f3;
+  font-size: 13rem;
+  bottom: 1.4rem;
+  left: 0;
+  z-index: -1;
+}
+
+@media (max-width: 991.98px) {
+  .section-title-underline .section-number {
+    font-size: 10rem;
+    bottom: 0.8rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-title-underline .section-number {
+    font-size: 8rem;
+    bottom: 0.5rem;
+  }
+}
+
+.section-desc {
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.caption, .training-section .training-caption, .point-break-section .point-break-caption {
+  position: absolute;
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
+  font-family: "League Spartan";
+  font-size: 1.4rem;
+  letter-spacing: 0.5rem;
+  color: rgba(11, 12, 17, 0.2);
+}
+
+@-webkit-keyframes fadeInTop {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInTop {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInBottom {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInBottom {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+/*-- Navbar CSS Start --*/
+.header {
+  background: #fff;
+}
+
+.navbar {
+  background: #fff;
+  -webkit-transition: 0.1s ease-in-out;
+  -o-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+  padding: 1rem 0;
+}
+
+.navbar .navbar-toggler {
+  width: 4rem;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  visibility: hidden;
+}
+
+.navbar .navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar .navbar-toggler .bar {
+  width: 100%;
+  height: 2px;
+  background: #0b0c11;
+  position: relative;
+  left: 0;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.navbar .navbar-toggler .bar::before {
+  content: "";
+  position: absolute;
+  background: #0b0c11;
+  width: 100%;
+  height: 2px;
+  bottom: 10px;
+  left: 0;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.navbar .navbar-toggler .bar::after {
+  content: "";
+  position: absolute;
+  background: #0b0c11;
+  width: 100%;
+  height: 2px;
+  top: 10px;
+  left: 0;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+@media (max-width: 991.98px) {
+  .navbar .navbar-toggler {
+    visibility: visible;
+  }
+}
+
+.navbar .open .bar {
+  background: transparent;
+}
+
+.navbar .open .bar::before {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  bottom: 0;
+}
+
+.navbar .open .bar::after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
+}
+
+.navbar .navbar-nav {
+  margin-left: 19rem;
+  font-family: "League Spartan";
+  font-size: 1.4rem;
+  letter-spacing: 0.5rem;
+}
+
+.navbar .navbar-nav .nav-link {
+  margin-right: 2.5rem;
+  color: #0b0c11;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #5da8ef;
+}
+
+@media (max-width: 991.98px) {
+  .navbar .navbar-nav {
+    margin-left: 0;
+    padding: 3rem 0;
+  }
+  .navbar .navbar-nav .nav-link {
+    padding: 1rem 0;
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    -webkit-box-shadow: 0 0 3rem 0 #0000001e !important;
+            box-shadow: 0 0 3rem 0 #0000001e !important;
+  }
+}
+
+/*-- Navbar CSS End --*/
+/*-- Hero Section CSS Start --*/
+.hero-section {
+  position: relative;
+  padding-top: 14rem;
+}
+
+.hero-section .hero-img {
+  -webkit-box-shadow: 0 0 3rem 0 #0000004d;
+          box-shadow: 0 0 3rem 0 #0000004d;
+}
+
+@media (max-width: 767.98px) {
+  .hero-section .hero-img {
+    margin-top: 3rem;
+  }
+}
+
+.hero-section .hero-text {
+  position: absolute;
+  top: 43%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 2;
+}
+
+@media (max-width: 767.98px) {
+  .hero-section .hero-text h3 {
+    margin-bottom: 0 !important;
+    letter-spacing: 0.6rem;
+  }
+}
+
+.hero-section .hero-text .hero-title {
+  font-family: "Playfair Display", serif;
+  font-size: 6.2rem;
+  font-weight: 700;
+  color: #0b0c11;
+}
+
+@media (max-width: 991.98px) {
+  .hero-section .hero-text .hero-title {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-section .hero-text .hero-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-section .hero-text .hero-title {
+    font-size: 4rem;
+  }
+}
+
+.hero-section .hero-text .hero-desc {
+  font-size: 1.4rem;
+  width: 43%;
+}
+
+@media (max-width: 767.98px) {
+  .hero-section .hero-text .hero-desc {
+    width: 100%;
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-section .hero-text .hero-desc {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .hero-section .hero-text {
+    top: 50%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-section .hero-text {
+    position: relative;
+    width: 100%;
+    top: 50%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .hero-section {
+    margin-top: 3rem;
+    padding-top: 10rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-section {
+    padding-top: 8rem;
+  }
+}
+
+/*-- Hero Section CSS End --*/
+/*-- Quote Section CSS Start --*/
+.quote-section .quote {
+  font-family: "Playfair Display", serif;
+  font-size: 2.6rem;
+  line-height: 3.8rem;
+  width: 50%;
+}
+
+@media (max-width: 767.98px) {
+  .quote-section .quote {
+    width: 80%;
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .quote-section .quote {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+}
+
+.quote-section .quote-author {
+  font-family: "League Spartan";
+  font-size: 1.4rem;
+  letter-spacing: 0.7rem;
+  color: #333333;
+  position: relative;
+}
+
+.quote-section .quote-author::after {
+  content: "";
+  top: calc(100% + 5.2rem);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  width: 0.2rem;
+  height: 10rem;
+  background: #5da8ef;
+}
+
+@media (max-width: 991.98px) {
+  .quote-section .quote-author::after {
+    height: 5rem;
+  }
+}
+
+/*-- Quote Section CSS End --*/
+/*-- Story Section CSS Start --*/
+.story-section {
+  margin-top: 6.4rem;
+}
+
+.story-section .container {
+  position: relative;
+}
+
+.story-section .container .video {
+  position: absolute;
+  padding-right: 0.75rem;
+  right: 0;
+  top: 15%;
+}
+
+.story-section .container .video:hover .play-btn {
+  opacity: 1 !important;
+}
+
+.story-section .container .video .play-btn {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #5dabef;
+  border: none;
+  color: #fff;
+}
+
+.story-section .container .video .play-btn i {
+  font-size: 1.5rem;
+}
+
+.story-section .container .video video {
+  width: 700px;
+}
+
+@media (max-width: 1199.98px) {
+  .story-section .container .video video {
+    width: 550px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .story-section .container .video video {
+    width: 400px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .story-section .container .video video {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .story-section .container .video {
+    top: 25%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .story-section .container .video {
+    position: relative;
+    padding-right: 0;
+  }
+}
+
+.story-section .container .story-text {
+  width: 90%;
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 991.98px) {
+  .story-section .container .story-text {
+    width: 40%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .story-section .container .story-text {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .story-section {
+    text-align: center;
+  }
+}
+
+/*-- Story Section CSS End --*/
+/*-- Shop Section CSS Start --*/
+.shop-section .item figure {
+  position: relative;
+  width: 20rem;
+}
+
+.shop-section .item figure::before {
+  content: "";
+  width: 20rem;
+  height: 32rem;
+  position: absolute;
+  background: #ececec;
+  bottom: 0%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -1;
+}
+
+@media (max-width: 1199.98px) {
+  .shop-section .item figure::before {
+    width: 15rem;
+    left: 40%;
+    height: 25rem;
+  }
+}
+
+@media (max-width: 599.98px) {
+  .shop-section .item figure::before {
+    margin-left: 3rem;
+  }
+}
+
+@media (max-width: 349.98px) {
+  .shop-section .item figure::before {
+    margin-left: 1rem;
+  }
+}
+
+.shop-section .item figure img {
+  width: 20rem;
+}
+
+@media (max-width: 1199.98px) {
+  .shop-section .item figure img {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 599.98px) {
+  .shop-section .item figure img {
+    margin-left: 3rem;
+  }
+}
+
+@media (max-width: 349.98px) {
+  .shop-section .item figure img {
+    margin-left: 1rem;
+  }
+}
+
+.shop-section .item .board-info {
+  position: absolute;
+  top: 40%;
+  left: 48%;
+}
+
+.shop-section .item .board-info .board-sub-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.shop-section .item .board-info .board-title {
+  font-family: "Playfair Display", serif;
+  color: #333333;
+  font-size: 2.6rem;
+}
+
+.shop-section .item .board-info .price {
+  font-size: 2rem;
+  color: #ce60a8;
+  margin-top: 3rem;
+  margin-left: 5rem;
+}
+
+.shop-section .item .board-info .shop-btn {
+  margin-left: 5rem;
+}
+
+@media (max-width: 1199.98px) {
+  .shop-section .item .board-info .price,
+  .shop-section .item .board-info .shop-btn {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .shop-section .item .board-info .price,
+  .shop-section .item .board-info .shop-btn {
+    margin-left: 3rem;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .shop-section .item .board-info {
+    top: 30%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .shop-section .item .board-info {
+    left: 40%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .shop-section .item .board-info {
+    left: 55%;
+  }
+}
+
+@media (max-width: 599.98px) {
+  .shop-section .item .board-info {
+    left: 40%;
+  }
+}
+
+@media (max-width: 399.98px) {
+  .shop-section .item .board-info {
+    left: 50%;
+  }
+}
+
+.shop-section .owl-next,
+.shop-section .owl-prev {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 100%;
+  width: 5rem;
+  padding: 0rem 5rem;
+}
+
+.shop-section .owl-next i,
+.shop-section .owl-prev i {
+  font-size: 2rem;
+}
+
+.shop-section .owl-prev {
+  left: -5%;
+}
+
+@media (max-width: 991.98px) {
+  .shop-section .owl-prev {
+    left: -8%;
+  }
+}
+
+@media (max-width: 819.98px) {
+  .shop-section .owl-prev {
+    left: -5%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .shop-section .owl-prev {
+    left: -8%;
+  }
+}
+
+@media (max-width: 599.98px) {
+  .shop-section .owl-prev {
+    left: -5%;
+  }
+}
+
+.shop-section .owl-next {
+  right: -5%;
+}
+
+@media (max-width: 991.98px) {
+  .shop-section .owl-next {
+    right: -8%;
+  }
+}
+
+@media (max-width: 819.98px) {
+  .shop-section .owl-next {
+    right: -5%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .shop-section .owl-next {
+    right: -8%;
+  }
+}
+
+@media (max-width: 599.98px) {
+  .shop-section .owl-next {
+    right: -5%;
+  }
+}
+
+.shop-section .owl-next:hover {
+  background: none !important;
+  color: #5da8ef !important;
+}
+
+.shop-section .owl-prev:hover {
+  background: none !important;
+  color: #5da8ef !important;
+}
+
+/*-- Shop Section CSS End --*/
+/*-- Training Section CSS Start --*/
+.training-section .training-btn {
+  display: inline-block !important;
+}
+
+.training-section .training-caption {
+  top: 45px;
+  right: -80px;
+}
+
+@media (max-width: 1019.98px) {
+  .training-section .training-caption {
+    right: -65px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .training-section .training-caption {
+    right: -70px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .training-section .training-caption {
+    right: -65px;
+  }
+}
+
+/*-- Training Section CSS End --*/
+/*-- Point Break Section CSS Start --*/
+.point-break-section .point-break-caption {
+  top: 45px;
+  left: -80px;
+}
+
+@media (max-width: 1019.98px) {
+  .point-break-section .point-break-caption {
+    left: -65px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .point-break-section .point-break-caption {
+    left: -70px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .point-break-section .point-break-caption {
+    left: -65px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .point-break-section .point-break-caption {
+    left: -60px;
+  }
+}
+
+/*-- Point Break Section CSS End --*/
+/*-- Join Club Section CSS Start --*/
+.join-club-section {
+  margin-top: 7rem;
+}
+
+.join-club-section .section-title, .join-club-section .camp-section .camp-loc, .camp-section .join-club-section .camp-loc {
+  position: relative;
+}
+
+.join-club-section .section-title::after, .join-club-section .camp-section .camp-loc::after, .camp-section .join-club-section .camp-loc::after {
+  content: "";
+  bottom: calc(100% + 5.2rem);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  width: 0.2rem;
+  height: 10rem;
+  background: #5da8ef;
+}
+
+@media (max-width: 991.98px) {
+  .join-club-section .section-title::after, .join-club-section .camp-section .camp-loc::after, .camp-section .join-club-section .camp-loc::after {
+    height: 5rem;
+  }
+}
+
+.join-club-section .section-desc {
+  width: 52%;
+  margin: auto;
+}
+
+@media (max-width: 575.98px) {
+  .join-club-section .section-desc {
+    width: 80%;
+  }
+}
+
+@media (max-width: 399.98px) {
+  .join-club-section .section-desc {
+    width: 100%;
+  }
+}
+
+.join-club-section form input {
+  width: 54rem;
+  height: 5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  padding: 0rem 1.5rem;
+  border: none;
+  background: #f0f0f0;
+  color: #333333;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+}
+
+.join-club-section form input::-webkit-input-placeholder {
+  font-family: "League Spartan";
+  color: #333333;
+  font-size: 1.6rem;
+  letter-spacing: 0.5rem;
+}
+
+.join-club-section form input:-ms-input-placeholder {
+  font-family: "League Spartan";
+  color: #333333;
+  font-size: 1.6rem;
+  letter-spacing: 0.5rem;
+}
+
+.join-club-section form input::-ms-input-placeholder {
+  font-family: "League Spartan";
+  color: #333333;
+  font-size: 1.6rem;
+  letter-spacing: 0.5rem;
+}
+
+.join-club-section form input::placeholder {
+  font-family: "League Spartan";
+  color: #333333;
+  font-size: 1.6rem;
+  letter-spacing: 0.5rem;
+}
+
+.join-club-section form input:focus {
+  outline: none;
+}
+
+@media (max-width: 991.98px) {
+  .join-club-section form input {
+    width: 40rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .join-club-section form input {
+    width: 30rem;
+    height: 4.5rem;
+    font-size: 1.4rem;
+  }
+  .join-club-section form input::-webkit-input-placeholder {
+    font-size: 1.4rem;
+  }
+  .join-club-section form input:-ms-input-placeholder {
+    font-size: 1.4rem;
+  }
+  .join-club-section form input::-ms-input-placeholder {
+    font-size: 1.4rem;
+  }
+  .join-club-section form input::placeholder {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 399.98px) {
+  .join-club-section form input {
+    width: 23rem;
+    height: 4rem;
+    padding: 0 0.5rem !important;
+  }
+}
+
+.join-club-section form .join-btn {
+  width: 5rem;
+  height: 5rem;
+  margin-left: -0.1rem;
+  border: none;
+  background: #5da8ef;
+}
+
+.join-club-section form .join-btn:hover {
+  background: #398fe1;
+}
+
+@media (max-width: 767.98px) {
+  .join-club-section form .join-btn {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
+
+@media (max-width: 399.98px) {
+  .join-club-section form .join-btn {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+/*-- Join Club Section CSS End --*/
+/*-- Camp Section CSS Start --*/
+.camp-section .camp-caption {
+  font-family: "League Spartan";
+  font-size: 1.2rem;
+  color: rgba(11, 12, 17, 0.2);
+  letter-spacing: 0.5rem;
+}
+
+.camp-section .camp-loc {
+  font-size: 3.2rem;
+  line-height: 4.6rem;
+}
+
+@media (max-width: 991.98px) {
+  .camp-section .camp-loc {
+    font-size: 2.8rem;
+    line-height: 3.8rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .camp-section .camp-loc {
+    line-height: 3.8rem;
+  }
+}
+
+/*-- Camp Section CSS End --*/
+/*-- Footer CSS Start --*/
+.footer-area .footer-menu .footer-link {
+  font-family: "League Spartan";
+  color: #333333;
+  font-size: 1.4rem;
+  line-height: 22px;
+  letter-spacing: 0.5rem;
+}
+
+.footer-area .footer-menu .footer-link:hover {
+  color: #5da8ef;
+}
+
+.footer-area .footer-social .footer-social-link {
+  font-size: 1.6rem;
+  color: rgba(11, 12, 17, 0.2);
+}
+
+.footer-area .footer-social .footer-social-link:hover {
+  color: #5da8ef;
+}
+
+/*-- Footer CSS End --*/
+/*-- Scroll Top CSS Start --*/
+.scroll-top {
+  bottom: -10rem;
+  right: 1rem;
+  height: 4rem;
+  width: 4rem;
+  background: #5da8ef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  z-index: 9999;
+}
+
+.scroll-top:hover {
+  background: #398fe1;
+}
+
+/*-- Scroll Top CSS End --*/

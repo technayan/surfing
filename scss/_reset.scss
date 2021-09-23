@@ -1,0 +1,182 @@
+@import '_variables';
+@import '_mixins';
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400&display=swap');
+
+@font-face {
+    font-family: "League Spartan";
+    src: url(../font/LeagueSpartan-Bold.ttf);
+}
+
+/* Reset CSS */
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 65.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    color: $text-color;
+    font-family: $text-font;
+    font-size: 1.6rem;
+    overflow-x: hidden !important;
+}
+
+@include mq (575.98px) {
+    .container{
+        padding: 0 1.5rem;
+    }
+}
+
+a{
+    transition: all 0.15s ease-in-out;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    transition: all 0.2s ease-in-out;
+}
+
+section{
+    padding: 7rem 0;
+}
+
+@include mq (991.98px) {
+    section{
+        padding: 5rem 0;
+    }
+}
+
+@include mq (575.98px) {
+    section{
+        padding: 4rem 0;
+    }
+}
+
+.section-sub-title{
+    font-family: $secondary-font;
+    font-size: 1.6rem;
+    letter-spacing: 0.8rem;
+    color: $primary-color;
+}
+
+
+.section-title{
+    font-family: $primary-font;
+    font-size: 4.2rem;
+    line-height: 66px;
+    color: $secondary-color;
+    font-weight: 700;
+}
+@include mq (991.98px) {
+    .section-title{
+        font-size: 3.8rem;
+        line-height: 40px;
+    }
+}
+@include mq (767.98px) {
+    .section-title{
+        font-size: 3.2rem;
+        line-height: 30px;
+    }
+}
+
+.primary-btn{
+    font-family: $secondary-font;
+    font-size: 1.4rem;
+    letter-spacing: 0.5rem;
+    background: none;
+    border: none;
+    position: relative;
+    &:hover{
+        color: $primary-color;
+    }
+    &:hover::after{
+        width: 50%;
+    }
+    
+    &::after{
+        content: "";
+        width: 100%;
+        height: 0.2rem;
+        background: #8cc1f3;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+.section-title-underline{
+    position: relative;
+    &::after{
+        position: absolute;
+        content: '';
+        width: 2.3rem;
+        height: 0.2rem;
+        background: $primary-color;
+        bottom: -0.5rem;
+        left: 0;
+    }
+    @include mq (991.98px) {
+        &::after{
+            bottom: -1rem;
+        }
+    }
+    @include mq (767.98px) {
+        &::after{
+            bottom: -1.5rem;
+        }
+    }
+    .section-number{
+        position: absolute;
+        font-family: $secondary-font;
+        letter-spacing: 1rem;
+        color: $number-color;
+        font-size: 13rem;
+        bottom: 1.4rem;
+        left: 0;
+        z-index: -1;
+    }
+    @include mq (991.98px) {
+        .section-number{
+            font-size: 10rem;
+            bottom: 0.8rem;
+        }
+    }
+    @include mq (767.98px) {
+        .section-number{
+            font-size: 8rem;
+            bottom: 0.5rem;
+        }
+    }
+}
+.section-desc{
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.caption{
+    position: absolute;
+    transform: rotate(270deg);
+    font-family: $secondary-font;
+    font-size: 1.4rem;
+    letter-spacing: 0.5rem;
+    color: rgba($color: #0b0c11, $alpha: 0.2);
+}
+
+

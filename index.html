@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Favicon -->
+      <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon(16x16).png">
+      <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon.png">
+      <!-- Bootstrap 5 CSS CDN-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <!-- FontAwesome CDN -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- Owl Carousel CSS -->
+      <link rel="stylesheet" href="./css/owl.carousel.min.css">
+      <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+      <!-- StyleSheet Link -->
+      <link rel="stylesheet" href="css/style.css">
+      <title>Surfing</title>
+  </head>
+  <body>
+    <!--[if IE]>
+    <p class="browseupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve you experience and security.</p>
+    <![endif]-->
+
+    <!-- Body Start -->
+
+    <!-- Header Start -->
+
+    
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="./assets/logo.png" alt="Surfing Logo" class="w-100"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="bar"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" onclick="myF()" href="#stories-section">stories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" onclick="myF()" href="#events-section">events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" onclick="myF()" href="#places-section">places</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" onclick="myF()" href="#boards-section">boards</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+
+    <section class="hero-section d-flex align-items-center" id="hero">
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="hero-text wow fadeInLeft">
+                  <h3 class="text-uppercase">Your</h3>
+                  <h1 class="hero-title text-capitalize">beautiful escape</h1>
+                  <p class="hero-desc mt-4 mb-0">One of the greatest things about the sport of surfing is that you need only three things: your body, a surfboard, and the wave.</p>
+                </div>
+              </div>
+                <div class="col-md-12 col-lg-10 offset-lg-2">
+                    <figure>
+                        <img src="./assets/hero-img.png" alt="Surfing Image" class="hero-img w-100">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section End -->
+
+    <!-- Quote Section Start -->
+    <div class="quote-section text-center">
+        <h2 class="quote mx-auto">Surfing is the most blissful experience you can have on this planet, a taste of heaven.</h2>
+        <h3 class="quote-author text-uppercase mt-5">john maccarthy</h3>
+    </div>
+    <!-- Quote Section End -->
+
+    <!-- Story Section Start -->
+    <div class="story-section" id="stories-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <figure>
+              <img src="./assets/2nd-img.png" alt="Surfer with Surfboard" class="story-img w-100">
+            </figure>
+          </div>
+        </div>
+        <div class="video">
+          <video src="./assets/surfing-video.mp4" poster="./assets/video-img.png" id="video"></video>
+          <button class="play-btn d-flex justify-content-center align-items-center" onclick="playPause()"><i class="fas fa-play ms-2 mt-1" id="btn-icon"></i></button>
+        </div>
+        <div class="row">
+          <div class="col-lg-5 story-text-area">
+            <p class="story-text mt-5 mt-md-3">By better understanding the various aspects of surfing, you will improve faster and have more fun in the water.</p>
+            <button class="primary-btn text-uppercase mt-3 mt-md-2 py-lg-3 py-md-2 py-2">Read more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Story Section End -->
+
+    <!-- Shop Section Start -->
+    <section class="shop-section" id="boards-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3 class="shop-sub-title text-uppercase">shop</h3>
+            <h2 class="section-title shop-title text-capitalize">surfboards</h2>
+          </div>
+          <div class="col-md-12">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <figure>
+                  <img src="./assets/board-1.png" class="d-block" alt="Surfing Board">
+                </figure>
+                <div class="board-info">
+                  <p class="board-sub-title text-uppercase">Funboards</p>
+                  <p class="board-title text-capitalize">Chilli rare bird</p>
+                  <p class="price">$890</p>
+                  <button class="shop-btn text-uppercase">buy</button>
+                </div>
+              </div>
+              <div class="item">
+                <figure>
+                  <img src="./assets/board-2.png" class="d-block" alt="Surfing Board">
+                </figure>
+                <div class="board-info">
+                  <p class="board-sub-title text-uppercase">Surfboards</p>
+                  <p class="board-title text-capitalize">Emery nem xf</p>
+                  <p class="price">$950</p>
+                  <button class="shop-btn text-uppercase">buy</button>
+                </div>
+              </div>
+              <div class="item">
+                <figure>
+                  <img src="./assets/board-3.png" class="d-block" alt="Surfing Board">
+                </figure>
+                <div class="board-info">
+                  <p class="board-sub-title text-uppercase">Funboards</p>
+                  <p class="board-title text-capitalize">Agency GROM</p>
+                  <p class="price">$670</p>
+                  <button class="shop-btn text-uppercase">buy</button>
+                </div>
+              </div>
+              <div class="item">
+                <figure>
+                  <img src="./assets/board-1.png" class="d-block" alt="Surfing Board">
+                </figure>
+                <div class="board-info">
+                  <p class="board-sub-title text-uppercase">Funboards</p>
+                  <p class="board-title text-capitalize">Chilli rare bird</p>
+                  <p class="price">$890</p>
+                  <button class="shop-btn text-uppercase">buy</button>
+                </div>
+              </div>
+              <div class="item">
+                <figure>
+                  <img src="./assets/board-2.png" class="d-block" alt="Surfing Board">
+                </figure>
+                <div class="board-info">
+                  <p class="board-sub-title text-uppercase">Surfboards</p>
+                  <p class="board-title text-capitalize">Emery nem xf</p>
+                  <p class="price">$950</p>
+                  <button class="shop-btn text-uppercase">buy</button>
+                </div>
+              </div>
+              <div class="item">
+                <figure>
+                  <img src="./assets/board-3.png" class="d-block" alt="Surfing Board">
+                </figure>
+                <div class="board-info">
+                  <p class="board-sub-title text-uppercase">Funboards</p>
+                  <p class="board-title text-capitalize">Egency GROM</p>
+                  <p class="price">$670</p>
+                  <button class="shop-btn text-uppercase">buy</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Shop Section End -->
+
+    <!-- Training Section Start -->
+    <section class="training-section" id="places-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 col-lg-4 d-flex align-items-center">
+            <div class="training-info">
+              <h2 class="section-title-underline section-title text-capitalize">Surf training<span class="section-number">01</span></h2>
+              <p class="section-desc mt-5">By better understanding the various aspects of surfing, By better understanding the various aspects of surfing, you will improve faster and have more fun in the water.</p>
+              <button class="training-btn text-uppercase mt-3 mt-md-2 mb-5 mb-md-0 py-lg-3 py-md-2 py-2">read more</button>
+            </div>
+          </div>
+          <div class="col-md-7 col-lg-8 mt-5 mt-md-0 position-relative">
+            <figure>
+              <img src="./assets/surf-training-img.png" alt="Surf Training" class="training-img w-100">
+            </figure>
+            <p class="training-caption text-uppercase">surf camp</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Training Section End -->
+
+    <!-- Point Break Section Start -->
+    <section class="point-break-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-lg-6 offset-lg-1 mt-5 mt-md-0 position-relative">
+            <figure>
+              <img src="./assets/point-break-img.png" alt="Point Break" class="point-break-img w-100">
+            </figure>
+            <p class="point-break-caption text-uppercase">surf camp</p>
+          </div>
+          <div class="col-md-5 col-lg-4 d-flex align-items-center order-first order-md-last">
+            <div class="point-break-info ms-xl-5 ms-lg-4 ms-md-3">
+              <h2 class="section-title-underline section-title text-capitalize">Point break<span class="section-number">02</span></h2>
+              <p class="section-desc mt-5">By better understanding the various aspects of surfing, By better understanding the various aspects of surfing, By better understanding the various aspects of surfing, you will improve faster and have more fun in the water.</p>
+              <button class="point-break-btn text-uppercase mt-3 mt-md-2 mb-5 mb-md-0 py-lg-3 py-md-2 py-2">read more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Point Break Section End -->
+
+    <!-- Join Club Section Start -->
+    <section class="join-club-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2 class="section-title club-title">Join the Club</h2>
+              <p class="section-desc club-sec-desc mt-4 mb-5">By better understanding the various aspects of surfing, you will improve faster and have more fun in the water.</p>
+              <form action="#">
+                <input type="text" placeholder="YOUR E-MAIL"><button type="submit" class="join-btn"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                </svg></button>
+              </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Join Club Section End -->
+
+    <!-- Camp Section Start -->
+    <section class="camp-section" id="events-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <figure>
+              <img src="./assets/camp-img.png" alt="Camp image" class="camp-img w-100">
+            </figure>
+          </div>
+          <div class="col-md-6 d-flex align-items-center order-md-last order-first">
+            <div class="camp-info ms-xl-5 ms-lg-4 ms-md-3">
+              <p class="camp-caption text-uppercase">our camp</p>
+              <h3 class="camp-loc text-capitalize">CA 91932, USA <br>imperial beach <br>560 silver strand blvd</h3>
+              <button class="camp-btn text-uppercase mt-4 mt-lg-5 mt-md-3 mb-5 mb-md-0 py-lg-3 py-md-2 py-2">get in touch</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Camp Section End -->
+
+    <!-- Footer Start -->
+    <footer class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <figure class="text-center">
+              <a href="index.html"><img src="./assets/logo.png" alt="Logo" class="footer-logo"></a>
+            </figure>
+            <ul class="footer-menu my-5 ps-2 mx-auto d-md-flex justify-content-center text-center">
+              <li><a href="#" class="footer-link mx-md-4 my-3 d-inline-block text-uppercase">Stories</a></li>
+              <li><a href="#" class="footer-link mx-md-4 my-3 d-inline-block text-uppercase">Events</a></li>
+              <li><a href="#" class="footer-link mx-md-4 my-3 d-inline-block text-uppercase">Places</a></li>
+              <li><a href="#" class="footer-link mx-md-4 my-3 d-inline-block text-uppercase">Boards</a></li>
+            </ul>
+            <ul class="footer-social d-flex justify-content-center mb-5 ps-0">
+              <li><a href="#" class="footer-social-link mx-4"><i class="fab fa-tumblr"></i></a></li>
+              <li><a href="#" class="footer-social-link mx-4"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#" class="footer-social-link mx-4"><i class="fab fa-vimeo-v"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Scroll Top Start -->
+    <div class="scroll-top position-fixed" onclick='scrollToTop()' title="Go to top">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+    <!-- Scroll Top End -->
+
+    <!-- Body End -->
+    <!-- JQuery -->
+    <script src="./JS/jquery.min.js"></script>
+    <!-- Bootstrap 5 JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="./JS/owl.carousel.min.js"></script>
+    <!-- GSAP 3 CDN -->
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./JS/app.js"></script>
+  </body>
+</html>
